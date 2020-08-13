@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/top"
+        layout="@layout/top"/>
+
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="@dimen/dp15">
+        <LinearLayout
+            android:id="@+id/layout_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_myorder"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="我的订单"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/main"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp8"/>
+            <ImageView
+                android:id="@+id/img_myorder"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp3"
+                android:background="@drawable/shape5"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_lower"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_lowerorder"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="下级订单"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/text_black"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp8"/>
+            <ImageView
+                android:id="@+id/img_lowerorder"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp3"
+                android:visibility="gone"
+                android:background="@drawable/shape5"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 中间显示区域用ViewPager -->
+    <com.ykh.yinmeng.ymykh2.wideget.viewpager.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/bg_color"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        android:layout_marginTop="@dimen/dp5"/>
+
+
+</LinearLayout>

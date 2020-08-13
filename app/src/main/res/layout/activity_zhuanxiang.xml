@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_bg_corner_gray">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="银行名称"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp15"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/line"/>
+                    <view
+                        android:layout_width="@dimen/line"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="银行名称"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp15"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/line"/>
+                    <view
+                        android:layout_width="@dimen/line"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="银行名称"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp15"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/line"/>
+                    <view
+                        android:layout_width="@dimen/line"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="银行名称"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp15"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/line"/>
+                    <view
+                        android:layout_width="@dimen/line"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="银行名称"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp15"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/line"/>
+                    <view
+                        android:layout_width="@dimen/line"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.ykh.yinmeng.ymykh2.wideget.viewpager.listview.BasListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"/>
+
+        </LinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

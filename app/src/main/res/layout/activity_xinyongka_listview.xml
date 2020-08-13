@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape0">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/img_logo"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_cardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@color/text_black"/>
+
+            <TextView
+                android:id="@+id/tv_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="11sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textColor="@color/red"
+                android:background="@drawable/btn_bg_corner_red"
+                android:layout_alignBaseline="@+id/tv_cardName"
+                android:layout_toRightOf="@+id/tv_cardName"
+                android:layout_marginLeft="@dimen/dp8"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_logo"
+            android:layout_below="@+id/rl_1">
+            <TextView
+                android:id="@+id/tv_tuiguang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:textSize="13sp"
+                android:textColor="@color/main"
+                android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/img_logo"
+            android:layout_below="@+id/rl_2"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp8">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="@color/red"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/bt_shenqing"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_bg_corner_yellow"
+                android:gravity="center"
+                android:text="立即申请"
+                android:textColor="@color/main"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="viewpager_inner" type="id"/>
+    <declare-styleable name="RollViewPager">
+        <attr name="rollviewpager_hint_mode">
+            <enum name="point" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+        <attr name="rollviewpager_hint_gravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="rollviewpager_hint_paddingRight" format="dimension"/>
+        <attr name="rollviewpager_hint_paddingLeft" format="dimension"/>
+        <attr name="rollviewpager_hint_paddingTop" format="dimension"/>
+        <attr name="rollviewpager_hint_paddingBottom" format="dimension"/>
+
+        <attr name="rollviewpager_play_delay" format="integer" />
+        <attr name="rollviewpager_hint_color" format="color" />
+        <attr name="rollviewpager_hint_alpha" format="integer" />
+    </declare-styleable>
+
+    <!--垂直滚动的TextView-->
+    <declare-styleable name="VerticalScrollTextView">
+        <attr name="vst_sleepTime" format="integer" />
+        <attr name="vst_animDuration" format="integer" />
+        <attr name="vst_textSize" format="dimension" />
+        <attr name="vst_textColor" format="color" />
+        <attr name="vst_singleLine" format="boolean" />
+        <attr name="vst_scrollOrientation">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

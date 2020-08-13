@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--头部导航栏-->
+    <include android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <!--获取的个人信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10">
+
+        <!--获取的个人信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--手机号（注册时的手机号，自动获取）-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/text_black"/>
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15239652874"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginLeft="@dimen/dp20"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"
+                android:layout_marginTop="@dimen/dp8"/>
+
+
+            <!--姓名（扫描身份证之后自动获取）-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="wrap_content"
+                    android:text="用户姓名"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/text_black"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王珂"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginLeft="@dimen/dp20"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"
+                android:layout_marginTop="@dimen/dp8"/>
+
+            <!--身份证号码（扫描身份证之后自动获取）-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号码"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/text_black"/>
+
+                <TextView
+                    android:id="@+id/tv_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="411282199602051245"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginLeft="@dimen/dp20"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"
+                android:layout_marginTop="@dimen/dp8"/>
+
+        </LinearLayout>
+
+        <!--身份证信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp30">
+
+            <ImageView
+                android:id="@+id/iv_ocr_zhengmian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp10"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/iv_ocr_fanmian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/dp10"/>
+
+        </LinearLayout>
+
+        <!--下一步按钮-->
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape5"
+            android:layout_marginTop="@dimen/dp80"
+            android:text="下一步"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--头部导航栏-->
+   <include android:id="@+id/top"
+       layout="@layout/top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp15">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可提现金额:"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/dp10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <!--提现金额输入框-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/line">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="@dimen/line">
+                <EditText
+                    android:id="@+id/et_tixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light"
+                    android:inputType="numberDecimal"
+                    android:hint="请输入提现金额"
+                    android:paddingLeft="@dimen/dp20"
+                    android:textSize="@dimen/sp14"
+                    android:textCursorDrawable="@color/text_black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tishi"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp13"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提现到："
+            android:layout_marginTop="@dimen/dp20"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp10">
+
+            <RelativeLayout
+                android:id="@+id/rl_zhifubao"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_zhifubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:drawableLeft="@mipmap/zhifubao"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_zhifubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/pay_isdefault_selector"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银行卡"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:drawableLeft="@mipmap/card1"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/pay_isdefault_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_select_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp10"
+            android:visibility="gone"
+            android:background="@drawable/shape0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/line"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/ll_yinhangka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp10">
+
+                    <LinearLayout
+                        android:id="@+id/ll_yinhang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/dp15">
+                        <TextView
+                            android:id="@+id/tv_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp16"/>
+                        <TextView
+                            android:id="@+id/tv_ka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp16"
+                            android:layout_marginTop="@dimen/dp10"/>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/ib_yinhangka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/fanhui"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/dp15"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_cardno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_yinhangka"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:text=""
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/text_black"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_addcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  添加储蓄卡"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp18"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/add"/>
+
+        </RelativeLayout>
+
+        <!-- 确认提现 -->
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp80"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10">
+            <Button
+                android:id="@+id/bt_queren"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp44"
+                android:text="确认提现"
+                android:gravity="center"
+                android:background="@drawable/shape5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

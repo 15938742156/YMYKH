@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--头部导航栏-->
+    <include android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp50"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="购买数量"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/text_black"/>
+
+                <EditText
+                    android:id="@+id/et_num"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@color/text_black"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp16"
+                    android:text="1"
+                    android:maxLines="1"
+                    android:digits="1234567890"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/dp5"
+                    android:textAlignment="center"
+                    android:fadeScrollbars="true"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@color/text_black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="件"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/text_black"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_buy"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/main"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

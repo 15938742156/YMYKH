@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <!--机器SN号、手机号、姓名-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <!--机器SN号-->
+        <LinearLayout
+            android:id="@+id/ll_sn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机器SN号"
+                android:textColor="@color/main"
+                android:gravity="center"
+                android:textSize="16sp"/>
+            <ImageView
+                android:id="@+id/img_sn"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp3"
+                android:layout_gravity="center"
+                android:background="@drawable/shape5"
+                android:layout_marginTop="@dimen/dp7"/>
+
+        </LinearLayout>
+
+        <!--手机号-->
+        <LinearLayout
+            android:id="@+id/ll_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:gravity="center"
+                android:textSize="@dimen/sp16"/>
+            <ImageView
+                android:id="@+id/img_tel"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp3"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp7"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+        <!--姓名-->
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:gravity="center"
+                android:textSize="@dimen/sp16"/>
+            <ImageView
+                android:id="@+id/img_name"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp3"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp7"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:layout_margin="@dimen/sp15"
+        android:orientation="horizontal"
+        android:background="@drawable/shape0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/ib_sousuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/search"/>
+
+            <EditText
+                android:id="@+id/et_SN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入下级姓名或者手机号"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/text_gray"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@color/text_black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

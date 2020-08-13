@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/btn_bg_corner_bule"
+        android:state_checked="true" >
+        <color android:color="@color/text_white"/>
+    </item>
+    <item
+        android:drawable="@drawable/btn_bg_corner_yellow"
+        android:state_checked="false">
+        <color android:color="@color/main"/>
+    </item>
+</selector>

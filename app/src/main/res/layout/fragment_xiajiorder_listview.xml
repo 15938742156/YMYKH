@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_corner_gray"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_xingming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名：王珂"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp15"/>
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_xingming"
+                    android:text="15238912767"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/text_black"
+                    android:layout_marginLeft="@dimen/dp15"/>
+                <TextView
+                    android:id="@+id/tv_lianxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:text="立即联系>>"
+                    android:textColor="@color/text_black"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"
+                android:layout_marginTop="@dimen/dp10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5">
+            <ImageView
+                android:id="@+id/img_pos"
+                android:layout_width="117dp"
+                android:layout_height="@dimen/dp80"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp10">
+
+                <RelativeLayout
+                    android:id="@+id/rl_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="瑞和宝0.6%"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp14"/>
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="等待买家付款"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp13"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_rebate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_name"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="@string/rebate"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/sp12"
+                    android:layout_marginBottom="@dimen/dp10"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_rebate"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="￥120.00"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp14"
+                        android:gravity="bottom"/>
+
+                    <TextView
+                        android:id="@+id/tv_yunfei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="包邮"
+                        android:gravity="bottom"
+                        android:textColor="@color/red"
+                        android:textSize="12sp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp24"
+            android:layout_marginBottom="@dimen/dp10">
+            <LinearLayout
+                android:id="@+id/ll_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共计 ￥"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp16"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/ll_total"
+                android:layout_marginRight="@dimen/dp15">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数量 "
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/tv_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 件"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp16"/>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

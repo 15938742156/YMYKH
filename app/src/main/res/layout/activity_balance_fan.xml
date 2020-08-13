@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <!--机器返利、交易返利-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dp5">
+
+        <!--机器返利-->
+        <LinearLayout
+            android:id="@+id/ll_machine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_machine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_machine"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/main"/>
+            <ImageView
+                android:id="@+id/img_machine"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp3"
+                android:background="@drawable/shape5"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp7"/>
+
+        </LinearLayout>
+
+        <!--交易返利-->
+        <LinearLayout
+            android:id="@+id/ll_transaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_transaction"
+                android:gravity="center"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/text_black"/>
+            <ImageView
+                android:id="@+id/img_transaction"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp3"
+                android:background="@drawable/shape5"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp7"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.ykh.yinmeng.ymykh2.wideget.viewpager.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

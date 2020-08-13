@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--头部导航栏-->
+    <include android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_quanbu"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="全部订单"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp15"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_daifukuan"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:text="待付款"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp15"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_daifahuo"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="待发货"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp15"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_daishouhuo"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="待收货"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp15"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.ykh.yinmeng.ymykh2.wideget.viewpager.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"/>
+
+</LinearLayout>

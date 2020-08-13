@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">新汇商城</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_title_tips">提示</string>
+    <string name="common_cancel">取消</string>
+    <string name="connnect_error_text">当前定位地址暂未开通服务，换个地址试试吧</string>
+    <string name="home">首页</string>
+    <string name="business">商家联盟</string>
+    <string name="order">订单管理</string>
+    <string name="my">我的</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="confirm">确定</string>
+    <string name="get">点击获取</string>
+    <string name="phone">手机号</string>
+    <string name="code">验证码</string>
+    <string name="password">密码</string>
+    <string name="edit_password">密码为6 - 12位字母加数字</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="new_password">新的密码</string>
+    <string name="superior">推荐人手机号</string>
+    <string name="get_code">获取验证码</string>
+    <string name="quick">已有账号快捷登录</string>
+    <string name="no">没有账号立即注册>></string>
+    <string name="girdview1">商户自采</string>
+    <string name="girdview2">邀请会员</string>
+    <string name="girdview3">新手讲堂</string>
+    <string name="girdview4">团队信息</string>
+    <string name="girdview5">推广收益</string>
+    <string name="girdview6">实名认证</string>
+    <string name="girdview7">推荐办卡</string>
+    <string name="girdview8">商户拓展</string>
+    <string name="notice">"百万现金放肆领"活动公告</string>
+    <string name="results">当月业绩</string>
+    <string name="total">本月总交易额</string>
+    <string name="hot">热门推荐</string>
+    <string name="name">瑞和宝0.6%</string>
+    <string name="rebate">推广返利70元，交易返10元</string>
+    <string name="inform">手机尾号为9801的客户提现580元</string>
+    <string name="RMB">元</string>
+
+    <!--我的-->
+    <string name="my_data">我的资料</string>
+    <string name="my_withdraw">提现</string>
+    <string name="my_service">我的客服</string>
+    <string name="my_address">地址管理</string>
+    <string name="my_card">银行卡管理</string>
+    <string name="my_share">分享好友</string>
+    <string name="my_greenhand">新手讲堂</string>
+    <string name="my_account">账户安全</string>
+    <string name="my_join">直营店加盟</string>
+    <string name="my_set">设置</string>
+    <string name="my_referrer">推荐人</string>
+
+    <!-- 推广收益 -->
+    <string name="total_revenue">总收益</string>
+    <string name="details">详情>></string>
+    <string name="members_all">我的所有会员</string>
+    <string name="members_month">当月新增会员数</string>
+    <string name="business_month">当月新增商户数</string>
+    <string name="members_direct">我的直营会员</string>
+    <string name="activate_month">当月激活商户数量</string>
+    <string name="activate_today">今天激活商户数量</string>
+    <string name="rebate_machine">机器返利</string>
+    <string name="rebate_transaction">交易返利</string>
+    <string name="rebate_cash">押金退还</string>
+    <string name="rebate_redpacket">推广红包</string>
+
+
+    <!-- 我的团队 -->
+    <string name="my_menber">我的会员</string>
+    <string name="team">团队排名</string>
+    <string name="my_business">商户查询</string>
+    <string name="activate">激活明细</string>
+    <string name="earnings">收益说明</string>
+    <string name="my_direct">我的直营</string>
+    <string name="my_lower">我的下级会员总人数</string>
+    <string name="menber_today">当日新增会员</string>
+    <string name="activate_num">当日激活台数</string>
+    <string name="total_money">本月交易总金额</string>
+    <string name="activate_business">当日激活商户</string>
+    <string name="direct_business">当前直营商户</string>
+
+
+    <!-- 设置 -->
+    <string name="set_version">当前版本</string>
+    <string name="set_new_version">当前已是最新版本</string>
+    <string name="set_log_out">退出登录</string>
+    <string name="set_feedback">意见反馈</string>
+    <string name="set_about_my">关于我们</string>
+
+    <!-- 我的资料 -->
+    <string name="data_name">姓名</string>
+    <string name="data_tel">手机号</string>
+    <string name="data_sex">性别</string>
+    <string name="data_id">身份证号</string>
+
+    <!-- 我的客服 -->
+    <string name="kefu_tel">立即拨打>></string>
+    <string name="kefu_copy">点击复制</string>
+    <string name="kefu_phone">客服联系方式</string>
+    <string name="kefu_tell">业务经理联系方式</string>
+
+    <!-- 意见反馈 -->
+    <string name="feedback_submit">提交</string>
+    <string name="feedback_tel">请输入您的联系方式（手机号或邮箱）</string>
+    <string name="feedback_idea">请输入您的意见或建议</string>
+
+
+
+    <string name="card">提示：请填写准确的银行卡信息（包括支行以及支行所属省市区），否则提现审核失败，将无法转账成功，谢谢配合！</string>
+    <string name="tishi">提示：每次提现不能少于100元</string>
+    <string name="renzheng">完成认证需要核实你的身份信息，请拍摄你本人的身份证</string>
+    <string name="xieyi">点击下一步默认同意以上协议，我们将保护您的信息安全</string>
+
+    <string name="app_tip">提示</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+
+    <!--积分兑换 -->
+    <string name="extract">提现</string>
+    <string name="member_upgrade">会员充值</string>
+    <string name="shouzhi">收支明细</string>
+    <string name="progress">审核进度</string>
+    <string name="service">我的客服</string>
+    <string name="free_upgrade">免费升级</string>
+    <string name="total_integral">累计兑换积分数</string>
+    <string name="total_earn">累计收益（元）</string>
+    <string name="balance">账户总金额（元）</string>
+    <string name="jifen_member1">当积分到达300万,可以免费申请升级到黄金会员;\n当积分到达1000万,可以免费申请升级到钻石会员;\n若积分达到可以升级成为黄金或者钻石会员标准,即可点击下方按钮进行申请升级！</string>
+    <string name="duihuan">立即兑换</string>
+    <string name="shouyi">开通会员终身有效！一次充值永久收益！</string>
+    <string name="tese"><s>1、在节假日、客户出国期间，银行可以为客户主动提高临时额度。</s><s>2、民生信用卡提现，本行取现免收手续费，境内他行ATM提现手续费仅为提现金额的1%，最低10元人民币，溢缴款(信用卡的存款)取现不计收利息。</s><n>3、民生银行可以帮标准白金卡用户免费提供预订机票、宾馆或律师服务、道路汽车服务等服务。</n><n>4、刷民生标准白金卡可享受免年费礼遇。</n><n>5、享受高效贴心的就医服务。</n></string>
+    <string name="gonglue"><n>1、年龄要求：18-60周岁；</n><n>2、个人信息真实详细；</n><n>3、手机号填写常用号码；</n><n>4、住宅地址和单位地址必须在同一城市；</n><n>5、住宅地址和单位地址必须详细到门牌号，例xx路xx号创新大厦A座505；</n><n>6、单位座机为必填项，填写单位座机或者关系好的同事座机；</n><n>7、家庭座机填写可提高通过率，务必记住号码；</n><n>8、提交成功后，可在银行官网查询进度。</n><n><br/></n></string>
+
+
+
+
+</resources>

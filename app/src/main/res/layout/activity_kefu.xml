@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/sp15"
+        android:layout_marginRight="@dimen/sp15"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/kefuzaixian"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_kefu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_time"
+            android:layout_marginTop="@dimen/dp20">
+
+            <ImageView
+                android:layout_width="161dp"
+                android:layout_height="185dp"
+                android:background="@mipmap/mykefu"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_kefu"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kefu_phone"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/text_black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_below="@+id/rl_tel"
+            android:layout_marginLeft="@dimen/dp70">
+
+            <!--立即拨打-->
+            <RelativeLayout
+                android:id="@+id/ll_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/kefu_tel"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/tv_dianhua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13253663309"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/img_tel"/>
+                <TextView
+                    android:id="@+id/tv_boda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kefu_tel"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/main"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_toRightOf="@+id/tv_dianhua"/>
+            </RelativeLayout>
+
+            <!--微信、点击复制-->
+            <RelativeLayout
+                android:id="@+id/ll_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_below="@+id/ll_tel">
+
+                <ImageView
+                    android:id="@+id/img_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/kefu_weixin"/>
+                <TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13253663309"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/img_weixin"/>
+                <TextView
+                    android:id="@+id/tv_fuzhiweixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kefu_copy"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/main"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:drawableRight="@mipmap/kefu_copy"
+                    android:drawablePadding="@dimen/dp5"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/tv_weixin"/>
+            </RelativeLayout>
+
+            <!--QQ、点击复制-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_below="@+id/ll_weixin">
+
+                <ImageView
+                    android:id="@+id/img_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/kefu_qq"/>
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2119912103 "
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/img_qq"/>
+                <TextView
+                    android:id="@+id/tv_fuzhiQQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kefu_copy"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/main"
+                    android:layout_marginLeft="@dimen/dp18"
+                    android:drawableRight="@mipmap/kefu_copy"
+                    android:layout_toRightOf="@+id/tv_qq"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/dp5"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:text="@string/kefu_tell"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="@dimen/dp70">
+
+            <!--立即拨打-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15">
+
+                <ImageView
+                    android:id="@+id/img_tell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/kefu_tel"/>
+                <TextView
+                    android:id="@+id/tv_jingli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15890100095"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/img_tell"
+                    android:layout_marginLeft="@dimen/dp10"/>
+                <TextView
+                    android:id="@+id/tv_boda2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kefu_tel"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/main"
+                    android:layout_toRightOf="@+id/tv_jingli"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:drawablePadding="@dimen/dp5"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

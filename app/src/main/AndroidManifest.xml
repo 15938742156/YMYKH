@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ykh.yinmeng.ymykh2">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    //请避免混淆Bugly，在Proguard混淆文件中增加以下配置:
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+
+
+    <!--极光推送所需-->
+    <permission
+        android:name="com.ykh.yinmeng.ymykh2.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.ykh.yinmeng.ymykh2.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--极光可选权限，根据需要添加-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+
+        <!--启动页 -->
+        <activity
+            android:name=".activity.start.WelComeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx541d351e0150a62e" />
+            </intent-filter>
+        </activity>
+        <!--引导页 -->
+        <activity
+            android:name=".activity.start.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.login.LoginActivity"/>
+        <!--忘记密码 -->
+        <activity android:name=".activity.forget.ForgetActivity"/>
+        <!--快捷登录 -->
+        <activity android:name=".activity.quick.QulickActivity"/>
+        <!--注册 -->
+        <activity android:name=".activity.register.RegisterActivity"/>
+        <!--设置登录登录 -->
+        <activity android:name=".activity.setLoginpassword.SetLoginpasswordActivity"/>
+        <!--主页面 -->
+        <activity android:name=".activity.main.MainActivity"/>
+        <!--推广收益 -->
+        <activity android:name=".activity.tuiguangshouyi.TuiguangshouyiActivity"/>
+        <!--收益详情 -->
+        <activity android:name=".activity.shouyixiangqing.ShouyixiangqingActivity"/>
+        <!--设置 -->
+        <activity android:name=".activity.SetActivity"/>
+        <!--意见反馈 -->
+        <activity android:name=".activity.FeedbackActivity"/>
+        <!--我的客服 -->
+        <activity android:name=".activity.MykefuActivity"/>
+        <!--我的资料 -->
+        <activity android:name=".activity.mydata.MydataActivity"/>
+        <!--地址管理列表 -->
+        <activity android:name=".activity.address.AddressActivity"/>
+        <!--添加收货地址 -->
+        <activity android:name=".activity.addressadd.AddaddressActivity"/>
+        <!--银行卡管理列表 -->
+        <activity android:name=".activity.cardlist.CardguanliActivity"/>
+        <!--添加银行卡 -->
+        <activity android:name=".activity.addcard.AddcardActivity"/>
+        <!--账户安全 -->
+        <activity android:name=".activity.ZhanghuanquanActivity"/>
+        <!--重置登录密码 -->
+        <activity android:name=".activity.resetloginpassword.ResetLoginpasswordActivity"/>
+        <!--重置交易密码 -->
+        <activity android:name=".activity.resetpassword.ResetpasswordActivity"/>
+        <!--重置手机号 -->
+        <activity android:name=".activity.resetphone.ResetphoneActivity"/>
+        <!--绑定支付宝 -->
+        <activity android:name=".activity.bangdingzhifubao.ZhifubaoActivity"/>
+        <!--提现 -->
+        <activity android:name=".activity.tixian.TixianActivity"/>
+        <!--提现记录 -->
+        <activity android:name=".activity.TixianjiluActivity"/>
+        <!--我的团队 -->
+        <activity android:name=".activity.myteam.MyteamActivity"/>
+        <!--我的会员 -->
+        <activity android:name=".activity.mymember.MymemberActivity"/>
+        <!--团队排名 -->
+        <activity android:name=".activity.tuanduipaiming.TuanduipaimingActivity"/>
+        <!--商户查询 -->
+        <activity android:name=".activity.shanghuchaxun.ShanghuchaxunActivity"/>
+        <!--激活明细 -->
+        <activity android:name=".activity.jihuomingxi.JihuomingxiActivity"/>
+        <!--收益说明 -->
+        <activity android:name=".activity.ShouyishuomingActivity"/>
+        <!--商户拓展 -->
+        <activity android:name=".activity.shanghutuozhan.ShanghutuozhanActivity" />
+        <!--打开摄像头 -->
+        <activity android:name=".activity.ScarnActivity" />
+        <!--商户自采 -->
+        <activity android:name=".activity.poslist.PoslistActivity" />
+        <!--商户自采详情 -->
+        <activity android:name=".activity.shanghuzicaixiangqing.ShanghuzicaixiangqingActivity" />
+        <!--确认下单 -->
+        <activity android:name=".activity.querendingdan.QuerendingdanActivity" />
+        <!--实名认证 -->
+        <activity android:name=".activity.shiming.ShimingActivity" />
+        <!--实名认证 -->
+        <activity android:name=".activity.shimingrenzheng.ShimingrenzhengActivity" />
+        <!--设置交易密码 -->
+        <activity android:name=".activity.setjiaoyipassword.SetjiaoyipasswordActivity" />
+        <!--银行卡认证 -->
+        <activity android:name=".activity.accard.ACCardActivity" />
+        <!--隐私保护协议 -->
+        <activity android:name=".activity.xieyi.XieyiYinsiActivity" />
+        <!--实名认证协议 -->
+        <activity android:name=".activity.xieyi.XieyiShimingActivity" />
+        <!--物流信息 -->
+        <activity android:name=".activity.logistics.LogisticsActivity" />
+        <!--我的订单 -->
+        <activity android:name=".activity.myorder.MyOrderActivity" />
+        <!--支付方式 -->
+        <activity android:name=".activity.zhifufangshi.ZhifufangshiActivity" />
+        <!--邀请会员背景 -->
+        <activity android:name=".activity.yaoqing.YaoqingActivity" />
+        <!--邀请会员 -->
+        <activity android:name=".activity.yaoqinghuiyuan.YaoqinghuiyuanActivity" />
+        <!--新手讲堂详情 -->
+        <activity android:name=".activity.xinshoujiangtangxiangqing.XinshoujiangtangxiangqingActivity" />
+        <!--信用卡列表 -->
+        <activity android:name=".activity.xinyongka.XinyongkaActivity" />
+        <!--信用卡申请进度 -->
+        <activity android:name=".activity.xinyongkajindu.XinyongkajinduActivity" />
+        <!--信用卡申请 -->
+        <activity android:name=".activity.xinyongkashenqing.XinyongkashenqingActivity" />
+        <!--信用卡申请 -->
+        <activity android:name=".activity.xinyongkaxiangqing.XinyongkaxiangqingActivity" />
+        <!--直营店加盟 -->
+        <activity android:name=".activity.FranchiseActivity" />
+        <!--关于我们 -->
+        <activity android:name=".activity.AboutMyActivity" />
+        <!--积分兑换 -->
+        <activity android:name=".activity.credits.CreditsActivity" />
+        <!--积分管理 -->
+        <activity android:name=".activity.jifenguanli.JifenguanliActivity" />
+        <!--积分兑换列表 -->
+        <activity android:name=".activity.itemcard.ItemCardActivity" />
+        <!--积分客服微信 -->
+        <activity android:name=".activity.kefuweixin.KefuActivity" />
+        <!--积分提现 -->
+        <activity android:name=".activity.jifentixian.JifenTixianActivity" />
+        <!--积分提现银行卡列表 -->
+        <activity android:name=".activity.jifencardlist.CardguanliActivity" />
+        <!--积分提现银行卡添加 -->
+        <activity android:name=".activity.jifenaddcard.AddcardActivity" />
+        <!--积分VIP价格 -->
+        <activity android:name=".activity.jifenvip.JifenVIPActivity" />
+        <!--积分VIP价格 -->
+        <activity android:name=".activity.jifenvip.JifenVIPtequanActivity" />
+        <!--积分审核进度 -->
+        <activity android:name=".activity.jifenjindu.JifenjinduActivity" />
+        <!--积分收支明细 -->
+        <activity android:name=".activity.jifenshouzhi.JifenshouzhiActivity" />
+        <!--积分商品兑换 -->
+        <activity android:name=".activity.itemcardgoods.ItemGoodsActivity" />
+        <!--积分商品兑换提交资料 -->
+        <activity android:name=".activity.jifensubmit.SubmitActivity" />
+
+        <!--微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <activity android:name=".wideget.viewpager.html.Html5Activity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ykh.yinmeng.ymykh2.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name="cn.jpush.android.service.PushService"
+            android:process=":multiprocess"
+            tools:node="replace"/>
+        <!-- 替换原生极光推送接收器 -->
+        <receiver
+            android:name=".push.MyReceiver"
+            android:enabled="true"
+            android:exported="false"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.ykh.yinmeng.ymykh2" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

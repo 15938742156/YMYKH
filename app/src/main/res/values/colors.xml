@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#eeeeee</color>
+    <color name="colorPrimaryDark">#ececec</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="background">#80000000</color><!--半透明-->
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="bottom_line_color">#c4c7cc</color>
+    <color name="panel_bg">#fffafafa</color>
+    <color name="base_yellow">#FFD600</color><!--app背景颜色（base黄色） -->
+    <color name="base_gray">#999999</color><!--app背景颜色（base灰色） -->
+    <color name="bg_color">#f3f3f3</color>
+    <color name="main">#3174fe</color><!--app主色调 -->
+    <color name="text_black">#333333</color><!--app字体颜色（黑） -->
+    <color name="line">#cccccc</color><!--item的线条背景颜色（灰色） -->
+    <color name="bule">#3275ff</color><!--app主色调 -->
+    <color name="view">#afafaf</color><!--app主色调 -->
+
+    <color name="item">#eeeeee</color><!--app主色调 -->
+    <color name="app">#f9f9f9</color><!--app主色调 -->
+
+    <color name="text_gray">#666666</color><!--字体灰 -->
+    <color name="text_white">#FFFFFF</color><!--字体白 -->
+    <color name="text_green">#12bb2d</color><!--字体白 -->
+    <color name="text_bai">#80ffffff</color><!--字体白 -->
+    <color name="text_red">#ff4e00</color><!--字体红 -->
+
+    <color name="line_view">#d0d0d0</color><!--字体白 -->
+
+    <color name="fooyo_tint_red">#ef5d6a</color>
+    <color name="fooyo_mid_green">#50b848</color>
+    <color name="fooyo_azure">#0076c8</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="free">#e7ae6f</color>
+    <color name="text_member">#efcead</color>
+    <color name="text_money">#e1ba93</color>
+    <color name="member_line">#3b3b39</color>
+    <color name="text_jifen">#353535</color>
+    <color name="jifen_line">#d7d4d4</color>
+    <color name="tag">#ffcaca</color>
+</resources>

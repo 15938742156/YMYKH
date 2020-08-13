@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--头部导航栏-->
+    <include android:id="@+id/top"
+        layout="@layout/top"/>
+
+    <!--应付金额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:background="@drawable/shape0"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应付金额"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/text_black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/sp17"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp15"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp15"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:drawableLeft="@mipmap/zhifubao"
+                    android:drawablePadding="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_zhifubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/pay_isdefault_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp14"
+                    android:drawableLeft="@mipmap/weixin"
+                    android:drawablePadding="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/pay_isdefault_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/bt_queding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape5"
+            android:layout_marginTop="@dimen/dp90"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="确定"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
